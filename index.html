@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchiridion</title>
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js//jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div>
+        <header id="contCabecera">
+            <nav class="menu">
+                <label for="cb">
+                    <img src="iconos/menu.svg" alt="menuHamburguesa">
+                </label>
+                <input type="checkbox" id="cb">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="src/novedades.html">Novedades</a></li>
+                    <li><a href="src/proximamente.html">Próximamente</a></li>
+                    <li>
+                        <label for="cb2" class="subMenu">
+                            Categorias
+                            <img src="iconos/flechaBajo.svg" alt="flechaAbajo">
+                        </label>
+                        <input type="checkbox" id="cb2">
+                        <ul>
+                            <li><a href="#">AMERICANO</a></li>
+                            <li><a href="#">EUROPEO</a></li>
+                            <li><a href="#">ESPAÑOL</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <picture>
+                <img src="imagenes/logo.png" alt="logo">
+            </picture>
+            <div>
+                <div>
+                    <a href="src/carrito.html">
+                        <img src="iconos/carrito.svg" alt="carrito">
+                    </a>
+                    <a href="src/user.html">
+                        <img src="iconos/user.svg" alt="usuario">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="slider" class="contenedor-slider">
+				<ul class="slider-wrapper">
+					<li class="current-slide">
+						<!--<img src="http://i9.photobucket.com/albums/a88/creaticode/1_zpsc6871490.jpg" title="" alt="">-->
+						<img src="https://c2.staticflickr.com/6/5094/5531620171_82185d6285_z.jpg" width="640" height="419">
+						<div class="caption">
+							<h2 class="slider-title">Diseño web</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo nobis, aspernatur iste ut voluptate.</p>
+						</div>
+					</li>
+			
+					<li>
+						<!--<img src="http://i9.photobucket.com/albums/a88/creaticode/2_zps6ccd36bd.jpg" title="" alt="">-->
+						<img src="https://c2.staticflickr.com/2/1142/5112412572_6b07684fd6_z.jpg">
+			
+						<div class="caption">
+							<h2 class="slider-title">Diseño Responsive</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum, similique!</p>
+						</div>
+					</li>
+			
+					<li>
+						<img src="https://c1.staticflickr.com/9/8360/8276578922_f65a266891_z.jpg" title="" alt="">
+						<div class="caption">
+							<h2 class="slider-title">Identidad Corporativa</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem minima! Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a perferendis!</p>
+						</div>
+					</li>
+			
+					<li>
+						<img src="https://c2.staticflickr.com/4/3534/4569643612_929f475102_z.jpg" title="" alt="">
+						<div class="caption">
+							<h2 class="slider-title">Desarrollo Web</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dignissimos laudantium.</p>
+						</div>
+					</li>
+				</ul>
+				<!-- Sombras --> <div class="slider-shadow"></div>
+				
+				<!-- Controles de Navegacion -->
+				<ul id="control-buttons" class="control-buttons"> 
+					 <li class="active"></li> <li></li> <li></li> <li></li>
+					</ul>
+				<div id="miniatura-container"></div>
+
+				<button type="button" id="imagen-anterior" class="botones-slider"><</button>
+				<button type="button" id="imagen-siguiente" class="botones-slider">></button>
+			</section>
+            <section id="sec">
+                <div class="contenedor">
+                    <div>
+                        <h2 class="titulo">NOVEDADES</h2>
+                        <a href="src/novedades.html">Ver más ></a>
+                    </div>
+                    <div>
+                        <p class="rojo"></p>
+                        <p class="gris"></p>
+                    </div>
+                </div>
+                <article class="itemSec">
+                    <picture>
+                            <img src="imagenes/c5.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>      
+                <article class="itemSec">
+                    <picture>
+                        <img src="imagenes/c2.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>
+                <article class="itemSec">
+                    <picture>
+                        <img src="imagenes/c2.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>
+            </section>
+            <section id="sec">
+                <div class="contenedor">
+                    <div>
+                        <h2 class="titulo">PRÓXIMAMENTE</h2>
+                        <a href="src/proximamente.html">Ver más ></a>
+                    </div>
+                    <div>
+                        <p class="rojo"></p>
+                        <p class="gris"></p>
+                    </div>
+                </div>                
+                <article class="itemSec">
+                    <picture>
+                        <img src="imagenes/c4.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>
+                <article class="itemSec">
+                    <picture>
+                        <img src="imagenes/c5.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>
+                <article class="itemSec">
+                    <picture>
+                        <img src="imagenes/c2.webp" alt="comics">
+                    </picture>
+                    <p>Avengers N 45</p>
+                    <button type="submit">AÑADIR</button>
+                </article>
+            </section>
+        </main>
+        <footer id="contPie">
+            <div class="blockNoti">
+                <input type="text" id="notifi" name="notifi">
+                <button type="submit" name="btnAtras"><img src="iconos/flechaAtras.svg" alt="logo"></button>
+            </div>
+            <p>
+                <a href="src/QS.html">CONTACTO</a>
+                <a href="src/AC.html">ATENCIÓN AL CLIENTE</a>
+                <a href="src/PP.html">POLÍTICA DE PRIVACIDAD</a>
+            </p>
+            <picture class="logo">
+                <img src="imagenes/logo.png" alt="logo">
+            </picture>
+            <div class="redesSocial">
+                <picture>
+                    <img src="imagenes/RS/logos_tiktok-icon.svg" alt="tiktok">
+                    <img src="imagenes/RS/logos_facebook.svg" alt="facebook">
+                    <img src="imagenes/RS/skill-icons_instagram.svg" alt="instagram">
+                    <img src="imagenes/RS/skill-icons_twitter.svg" alt="twitter">
+                </picture>
+            </div>
+        </footer>
+    </div>
+    <div id="volverarriba"><a href="#top"><img src="iconos/flechaArriba.svg" alt="flechaArriba"></a></div>
+</body>
+</html>
