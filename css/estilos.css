@@ -28,14 +28,20 @@ header#contCabecera nav.menu input {
 header#contCabecera nav.menu ul {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 87%;
     left: 0;
     width: 100%;
     background-color: white;
+    z-index: 1001;
+    padding-top: 1.5rem;
 }
 
 header#contCabecera nav.menu img {
     cursor: pointer;
+}
+
+header#contCabecera nav.menu ul li:nth-child(4){
+    padding-bottom: 5px;
 }
 
 header#contCabecera nav.menu ul li label.subMenu {
@@ -693,4 +699,24 @@ div#volverarriba a {
 div#volverarriba img {
     width: 2rem;
     height: 2rem;
+}
+
+@media(min-width: 768px){
+    .contenedor-slider {
+        width: 800px;
+    }
+
+    main section#sec {
+        justify-content: ;
+    }
+
+    main section#sec article.itemSec {
+        flex: 0 20%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contenedor-slider {
+        width: 800px;
+    }
 }

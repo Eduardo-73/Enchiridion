@@ -42,6 +42,22 @@ $(function () {
         $(this).find("a").stop(true, true).fadeOut(500);
     });
 
+    $(".totalPedido a").on("mouseenter", function () {
+        $(this).stop(true, true).css({ "background-color": "#CE2D3F" });
+    });
+
+    $(".totalPedido a").on("mouseleave", function () {
+        $(this).stop(true, true).css({ "background-color": "black" });
+    });
+
+    $(".btnComprar button").on("mouseenter", function () {
+        $(this).stop(true, true).css({ "background-color": "#CE2D3F" });
+    });
+
+    $(".btnComprar button").on("mouseleave", function () {
+        $(this).stop(true, true).css({ "background-color": "black" });
+    });
+
     var SliderModule = (function () {
         var pb = {};
         pb.elslider = $('#slider');
