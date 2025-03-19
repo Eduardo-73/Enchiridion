@@ -627,7 +627,7 @@ footer#contPie {
     border: 3px solid black;
 }
 
-footer#contPie picture.logo img {
+footer#contPie div.redesSocial picture.logo img {
     height: auto;
     width: 10rem;
 }
@@ -666,7 +666,7 @@ footer#contPie p a {
     font-weight: bold;
 }
 
-footer#contPie div.redesSocial img {
+footer#contPie div.redesSocial div img {
     height: auto;
     width: 1.5rem;
     margin: 0.5rem;
@@ -707,11 +707,38 @@ div#volverarriba img {
     }
 
     main section#sec {
-        justify-content: ;
+        justify-content: flex-start;
     }
 
     main section#sec article.itemSec {
         flex: 0 20%;
+        margin-left: 1.9rem;
+    }
+
+    footer#contPie {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer#contPie div.blockNoti{
+        width: 50%;
+        order: 2;
+        padding-right: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    footer#contPie div.redesSocial{  
+        order: 3;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer#contPie p {
+        width: 50%;
+        order: 2;   
+        padding-left: 7rem;
+        align-items: start;    
     }
 }
 
