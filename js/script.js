@@ -58,6 +58,14 @@ $(function () {
         $(this).stop(true, true).css({ "background-color": "black" });
     });
 
+    $("#inicio").on("mouseenter", function () {
+        $(this).stop(true, true).css({ "background-color": "#CE2D3F" });
+    });
+
+    $("#inicio").on("mouseleave", function () {
+        $(this).stop(true, true).css({ "background-color": "black" });
+    });
+
     var SliderModule = (function () {
         var pb = {};
         pb.elslider = $('#slider');

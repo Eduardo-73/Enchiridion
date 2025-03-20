@@ -715,6 +715,33 @@ div#volverarriba img {
         margin-left: 1.9rem;
     }
 
+    section#sec {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main section#sec div.contenedor div:nth-child(2) p.rojo{
+        width: 6%;
+    }
+
+    main section#sec article.prodCarr {
+        width: 50%;
+    }
+
+    section#sec div.contProd{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section#sec div.contProd div.contenedor{
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    main section#sec article.prodCarr div.verde span:nth-child(2){
+        display: none;
+    }
+
     footer#contPie {
         flex-direction: row;
         flex-wrap: wrap;
@@ -744,6 +771,51 @@ div#volverarriba img {
 
 @media(min-width: 1024px){
     .contenedor-slider {
-        width: 800px;
+        width: 1000px;
+    }
+
+    main{
+        width: 60%;
+        margin: auto;
+    }
+
+    main section#sec article.itemSec {
+        flex: 0 10%;
+        margin-left: 2.2rem;
+    }
+
+    main section#sec div.contenedor div:nth-child(2) p.rojo{
+        width: 5%;
+    }
+
+    footer#contPie {
+        flex-wrap: nowrap;
+    }
+
+    footer#contPie div.blockNoti{
+        order: 2;
+        padding-bottom: 10rem;
+        padding-left: 4rem;
+    }
+
+    footer#contPie div.redesSocial{  
+        order: 1;
+        text-align: center;
+        padding-top: 2rem;
+        width: 30%;
+    }
+
+    footer#contPie div.redesSocial picture.logo img {
+        height: auto;
+        width: 20rem;
+    }
+
+    footer#contPie p {
+        order: 3;   
+        align-items: start; 
+        width: 30%;
+        padding-bottom: 5rem;
+        font-size: large;
+        padding-right: 2rem;
     }
 }

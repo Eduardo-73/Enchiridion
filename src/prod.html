@@ -7,6 +7,9 @@
     <title>Enchiridion</title>
     <link rel="shortcut icon" href="../imagenes/logo.png">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery.animate-colors-min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -51,54 +54,58 @@
         </header>
         <main>
             <section id="sec">
-                <article class="prodCarr">
-                    <picture class="imgProd">
-                        <img src="../imagenes/c12.webp" alt="comics">
-                    </picture>
-                    <div class="verde">
-                        <span>STOCK</span><span>Quedan 4 artículos</span>
-                    </div>
-                    <div class="tituloArtProd">
-                        Amazing Spider-Man
-                    </div>
-                    <div class="totalPedidoProd">
-                        <div>
-                            <div>TOTAL<span class="precio">30.00€</span></div>
-                            <button type="submit">AÑADIR</button>
-                        </div>
-                        <picture class="spinnerProd">
-                            <img src="../iconos/spinner.svg" alt="spinner">
+                <div class="contProd">
+                    <article class="prodCarr">
+                        <picture class="imgProd">
+                            <img src="../imagenes/c12.webp" alt="comics">
                         </picture>
+                        <div class="verde">
+                            <span>STOCK</span><span>Quedan 4 artículos</span>
+                        </div>
+                        <div class="tituloArtProd">
+                            Amazing Spider-Man
+                        </div>
+                        <div class="totalPedidoProd">
+                            <div>
+                                <div>TOTAL<span class="precio">30.00€</span></div>
+                                <button type="submit">AÑADIR</button>
+                            </div>
+                            <picture class="spinnerProd">
+                                <img src="../iconos/spinner.svg" alt="spinner">
+                            </picture>
+                        </div>
+                    </article>
+                    <div class="contDes">
+                        <div class="contenedor">
+                            <div>
+                                <h2 class="titulo tituloDer">DESCRIPCIÓN</h2>
+                            </div>
+                            <div>
+                                <p class="rojo"></p>
+                                <p class="gris"></p>
+                            </div>
+                        </div>
+                        <div class="descrip">
+                            Lorem ipsum dolor sit amet consectetur.
+                            Sit sollicitudin suspendisse at sit. Condimentum maecenas
+                            ut tempus purus sollicitudin at molestie quis. Scelerisque
+                            arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
+                            Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
+                            amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
+                            Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
+                            nulla consequat
+                            pulvinar et. Pellentesque elit quis in dui. Vestibulum
+                            magnis nibh odio magna vivamus at. Massa aliquam iaculis
+                            quis risus quam ullamcorper. Pharetra scelerisque facilisis
+                            magna ut sed. Vitae platea et gravida amet rutrum tortor.
+                        </div>
                     </div>
-                </article>
-                <div class="contenedor">
-                    <div>
-                        <h2 class="titulo tituloDer">DESCRIPCIÓN</h2>
-                    </div>
-                    <div>
-                        <p class="rojo"></p>
-                        <p class="gris"></p>
-                    </div>
-                </div>
-                <div class="descrip">
-                    Lorem ipsum dolor sit amet consectetur.
-                    Sit sollicitudin suspendisse at sit. Condimentum maecenas
-                    ut tempus purus sollicitudin at molestie quis. Scelerisque
-                    arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
-                    Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
-                    amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
-                    Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
-                    nulla consequat
-                    pulvinar et. Pellentesque elit quis in dui. Vestibulum
-                    magnis nibh odio magna vivamus at. Massa aliquam iaculis
-                    quis risus quam ullamcorper. Pharetra scelerisque facilisis
-                    magna ut sed. Vitae platea et gravida amet rutrum tortor.
                 </div>
             </section>
         </main>
         <footer id="contPie">
             <div class="blockNoti">
-                <input type="text" id="notifi" name="notifi">
+                <input type="text" id="notifi" name="notifi" placeholder=" SUSCRIBETE">
                 <button type="submit" name="btnAtras"><img src="../iconos/flechaAtras.svg" alt="logo"></button>
             </div>
             <p>
@@ -121,6 +128,7 @@
             </div>
         </footer>
     </div>
+    <div id="volverarriba"><a href="#top"><img src="../iconos/flechaArriba.svg" alt="flechaArriba"></a></div>
 </body>
 
 </html>
