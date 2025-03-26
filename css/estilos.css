@@ -627,6 +627,10 @@ footer#contPie {
     border: 3px solid black;
 }
 
+footer#contPie section#ubicacion {
+    display: none;
+}
+
 footer#contPie div.redesSocial picture.logo img {
     height: auto;
     width: 10rem;
