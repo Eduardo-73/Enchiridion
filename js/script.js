@@ -1,12 +1,13 @@
 $(function () {
     // Anclar cabecera al hacer scroll
     $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 150) {
+        if ($(this).scrollTop() > 250) {
             $("header").css({
                 "position": "fixed",
                 "width": "100%",
                 "top": "0",
                 "background": "black",
+                "z-index": "1000"
             });
         } else {
             $("header").css({
