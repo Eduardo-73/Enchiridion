@@ -23,6 +23,7 @@ header#contCabecera {
     flex-direction: row;
     align-items: center;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 header#contCabecera nav.menu input {
@@ -93,6 +94,31 @@ header#contCabecera div {
 header#contCabecera picture>img {
     height: auto;
     width: 10rem;
+}
+
+header#contCabecera div#buscadorContainer {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+header#contCabecera div#buscadorContainer input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+header#contCabecera div#buscadorContainer img {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
 }
 
 /*BODY*/
@@ -718,6 +744,10 @@ div#volverarriba img {
 }
 
 @media(min-width: 768px) {
+    header#contCabecera div#buscadorContainer{
+        padding: 0 5rem;
+    }
+
     .contenedor-slider {
         width: 800px;
     }

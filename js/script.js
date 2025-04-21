@@ -9,9 +9,15 @@ $(function () {
                 "background": "black",
                 "z-index": "1000"
             });
+            $("header#contCabecera div#buscadorContainer").css({
+                "display": "none"
+            });
         } else {
             $("header").css({
                 "position": "relative",
+            });
+            $("header#contCabecera div#buscadorContainer").css({
+                "display": "flex"
             });
         }
     });
