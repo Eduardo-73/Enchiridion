@@ -26,10 +26,6 @@ header#contCabecera {
     margin-bottom: 3rem;
 }
 
-header#contCabecera nav.menu input {
-    display: none;
-}
-
 header#contCabecera nav.menu ul {
     display: none;
     position: absolute;
@@ -37,7 +33,7 @@ header#contCabecera nav.menu ul {
     left: 0;
     width: 100%;
     background-color: white;
-    z-index: 1001;
+    z-index: 1002;
     padding-top: 1.5rem;
 }
 
@@ -45,11 +41,7 @@ header#contCabecera nav.menu img {
     cursor: pointer;
 }
 
-header#contCabecera nav.menu ul li:nth-child(4) {
-    padding-bottom: 5px;
-}
-
-header#contCabecera nav.menu ul li label.subMenu {
+header#contCabecera nav.menu ul li div.subMenu {
     cursor: pointer;
     display: block;
     font-size: large;
@@ -59,23 +51,16 @@ header#contCabecera nav.menu ul li a {
     font-size: large;
 }
 
-header#contCabecera nav.menu ul li>label.subMenu {
+header#contCabecera nav.menu ul li>div.subMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0.5rem;
 }
 
-header#contCabecera nav.menu ul li>label.subMenu img {
+header#contCabecera nav.menu ul li>div.subMenu img {
     width: 16px;
     height: auto;
-}
-
-header#contCabecera nav.menu input#cb:checked+ul {
-    display: block;
-}
-
-header#contCabecera nav.menu ul li input#cb2:checked+ul {
-    display: block;
 }
 
 header#contCabecera picture {
@@ -96,7 +81,7 @@ header#contCabecera picture>img {
     width: 10rem;
 }
 
-header#contCabecera div#buscadorContainer {
+div#buscadorContainer {
     position: absolute;
     top: 110%;
     left: 50%;
@@ -108,14 +93,14 @@ header#contCabecera div#buscadorContainer {
     border-radius: 5px;
 }
 
-header#contCabecera div#buscadorContainer input {
+div#buscadorContainer input {
     border: none;
     outline: none;
     padding: 0.5rem;
     font-size: 1rem;
 }
 
-header#contCabecera div#buscadorContainer img {
+div#buscadorContainer img {
     width: 20px;
     height: auto;
     cursor: pointer;
@@ -171,7 +156,7 @@ button#imagen-siguiente {
 #miniatura-container img {
     width: 100%;
     height: auto;
-    border: solid #424f66 3px;
+    border: solid black 3px;
 }
 
 #miniatura-imagenes ul {
@@ -243,13 +228,13 @@ button#imagen-siguiente {
 
 .slider-wrapper h2 {
     color: #00c5b9;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 400;
     margin-bottom: 6px;
 }
 
 .slider-wrapper p {
-    font-size: 1.6em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.4em;
 }
@@ -704,8 +689,6 @@ footer#contPie p {
 footer#contPie p a {
     color: white;
     margin-top: 1rem;
-    text-decoration: underline;
-    font-weight: bold;
 }
 
 footer#contPie div.redesSocial div img {
@@ -744,12 +727,12 @@ div#volverarriba img {
 }
 
 @media(min-width: 768px) {
-    header#contCabecera div#buscadorContainer{
-        padding: 0 5rem;
-    }
-
     .contenedor-slider {
         width: 800px;
+    }
+
+    #miniatura-container {
+        left: 46%;
     }
 
     main section#sec {
@@ -820,6 +803,24 @@ div#volverarriba img {
 }
 
 @media(min-width: 1024px) {
+    header#contCabecera div#buscadorContainer {
+        position: static;
+        transform: none;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        order: 0;
+        padding-right: 3rem;
+    }
+
+    header#contCabecera div#buscadorContainer input {
+        display: none;
+    }
+
+    header#contCabecera div#buscadorContainer img {
+        filter: invert(1);
+    }
+
     .contenedor-slider {
         width: 100%;
     }
@@ -833,27 +834,59 @@ div#volverarriba img {
         order: 2;
     }
 
-    header#contCabecera div {
-        order: 3;
-        margin-left: auto;
-    }
-
-    header#contCabecera nav.menu label,
-    header#contCabecera nav.menu ul li:nth-child(4) ul{
+    header#contCabecera nav.menu .btnMenu{
         display: none;
     }
 
-    header#contCabecera nav.menu ul {
+    header#contCabecera div {
+        order: 3;
+        margin-left: auto;
         display: flex;
-        position: relative;
-        top: 0;
+    }
+
+    header#contCabecera nav.menu ul.mainMenu {
+        display: flex;
+        position: static; 
+        z-index: 1002; 
         background-color: black;
     }
 
-    header#contCabecera nav.menu ul li a {
+    header#contCabecera nav.menu ul li div.subMenu { 
+        background-color: black;
         color: white;
         font-size: x-large;
-        font-weight: bold;
+    }
+
+    header#contCabecera nav.menu ul {
+        top: 100%;
+        left: 32%;
+        width: 10%;
+    }
+
+    header#contCabecera nav.menu ul li>div.subMenu img {
+        filter: invert(1);
+        padding-top: 3px;
+    }
+
+    header#contCabecera nav.menu ul.mainMenu li a {
+        color: white;
+        font-size: x-large;
+    }
+
+    header#contCabecera nav.menu ul.mainMenu li .subMenuItems {
+        background-color: white;
+        border: 2px solid black; 
+        box-shadow: 0px -4px 10px black;
+    }
+
+    header#contCabecera nav.menu ul.mainMenu li .subMenuItems a{
+        color: black;
+        font-size: medium;   
+        font-weight: lighter;   
+    }
+
+    #miniatura-container {
+        left: 46.7%;
     }
 
     main {
@@ -881,14 +914,32 @@ div#volverarriba img {
         margin-right: 13.8rem;
     }
 
+    footer#contPie section#ubicacion {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 0 auto;
+    }
+
+    footer#contPie section#ubicacion div.mapa-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    footer#contPie section#ubicacion div.mapa-container iframe {
+        width: 100%;
+        height: 250px;
+        border: 0;
+    }
+
     footer#contPie {
         flex-wrap: nowrap;
     }
 
     footer#contPie div.blockNoti {
         order: 2;
-        padding-bottom: 10rem;
         padding-left: 4rem;
+        flex-wrap: wrap;
     }
 
     footer#contPie div.redesSocial {
