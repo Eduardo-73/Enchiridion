@@ -10,6 +10,7 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/jquery.animate-colors-min.js"></script>
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -93,7 +94,30 @@
                     quis risus quam ullamcorper. Pharetra scelerisque facilisis
                     magna ut sed. Vitae platea et gravida amet rutrum tortor.
                 </div>
-            </section>          
+            </section>  
+            <div class="contenedor-reproductor">
+                <video id="video" tabindex="0">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    <source src="videos/video.ogg" type="video/ogg">
+                    <source src="videos/video.webm" type="video/webm">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <div class="controles">
+                    <button id="reproducir" tabindex="0"><i id="btnPlay" class="fas fa-play"></i></button>
+                    <button id="parar" tabindex="0"><i class="fas fa-stop"></i></button>
+                    <button id="atras" tabindex="0"><i class="fas fa-backward"></i></button>
+                    <button id="adelante" tabindex="0"><i class="fas fa-forward"></i></button>
+                    <button id="restart" tabindex="0"><i class="fas fa-redo"></i></button>
+                    <button id="lento" tabindex="0"><i class="fas fa-minus"></i></button>
+                    <button id="rapido" tabindex="0"><i class="fas fa-plus"></i></button>
+                    <input type="range" id="barraTiempo" tabindex="0" min="0" max="100" value="0">
+                    <span id="tiempo">0:00/0:00</span>
+                    <input type="range" id="volume" tabindex="0" min="0" max="1" step="0.1" value="0.0">
+                    <button id="mute" tabindex="0"><i id="btnMute" class="fas fa-deaf"></i></button>
+                    <button id="fullscreen" tabindex="0"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+            <script src="../js/scriptVideo.js"></script>        
         </main>
         <footer id="contPie">
             <div class="blockNoti">
@@ -120,10 +144,10 @@
                 </picture>
                 <div>
                     <picture>
-                        <img src="../imagenes/RS/logos_tiktok-icon.svg" alt="tiktok">
-                        <img src="../imagenes/RS/logos_facebook.svg" alt="facebook">
-                        <img src="../imagenes/RS/skill-icons_instagram.svg" alt="instagram">
-                        <img src="../imagenes/RS/skill-icons_twitter.svg" alt="twitter">
+                        <img src="../imagenes/RS/logos_tiktok-icon.svg" alt="tiktok" title="tiktok">
+                        <img src="../imagenes/RS/logos_facebook.svg" alt="facebook" title="facebook">
+                        <img src="../imagenes/RS/skill-icons_instagram.svg" alt="instagram" title="instagram">
+                        <img src="../imagenes/RS/skill-icons_twitter.svg" alt="twitter" title="twitter">
                     </picture>
                 </div>
             </div>

@@ -280,7 +280,7 @@ main section#sec {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 main section#sec div.contenedor {
@@ -328,7 +328,7 @@ main section#sec div.contenedor p.rojo {
 main section#sec article.itemSec {
     display: flex;
     flex-direction: column;
-    flex: 0 30%;
+    flex: 0 46%;
     align-items: center;
     margin: 0.5rem;
     margin-bottom: 3rem;
@@ -336,7 +336,7 @@ main section#sec article.itemSec {
 
 main section#sec article.itemSec picture img {
     height: auto;
-    width: 10rem;
+    width: 12rem;
 }
 
 main section#sec article.itemSec button {
@@ -389,10 +389,6 @@ main section#sec article.artCarr picture.imgArtCarr img {
 
 main section#sec article.artCarr p.tituloArtCarr {
     padding-bottom: 8rem;
-}
-
-main section#sec article.artCarr picture.spinner {
-    margin-left: 5rem;
 }
 
 main section#sec article.artCarr p.precio {
@@ -634,6 +630,69 @@ main section#sec form div.btnComprar {
     margin-left: auto;
 }
 
+/*VIDEO*/
+
+.contenedor-reproductor {
+    background-color: #333;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.15rem 0.25rem black;
+    margin: 1rem;
+}
+
+video {
+    outline: none;
+    background-color: black;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.15rem;
+    flex-wrap: wrap;
+}
+
+button, input[type="range"] {
+    background: #333;
+    color: white;
+    border-radius: 0.15rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover, input[type="range"]:hover {
+    background-color: #444;
+}
+
+button i, span {
+    font-size: 1rem;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    appearance: none;
+    background-color: #555;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:focus, input:focus {
+    outline: 2px solid lightseagreen;
+}
+
 /*PIE*/
 footer#contPie {
     background-color: #204FC7;
@@ -643,7 +702,7 @@ footer#contPie {
     align-items: center;
     border-top: 3px solid black;
     box-shadow: 0px -4px 10px black;
-    margin-top: 20rem;
+    margin-top: 30rem;
 }
 
 footer#contPie p a {
@@ -694,7 +753,8 @@ footer#contPie p a {
 footer#contPie div.redesSocial div img {
     height: auto;
     width: 1.5rem;
-    margin: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 div#volverarriba {
@@ -747,6 +807,10 @@ div#volverarriba img {
     section#sec {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    main section#sec article.itemSec picture img {
+        width: 10rem;
     }
 
     main section#sec div.contenedor div:nth-child(2) p.rojo {
@@ -898,12 +962,16 @@ div#volverarriba img {
         padding: 1rem;
     }
 
+    main section#sec article.itemSec picture img {
+        width: 10rem;
+    }
+
     main section#sec div.contenedor div:nth-child(2) p.rojo {
         width: 5%;
     }
 
     main section#sec article.artCarr picture.spinner {
-        margin-left: 20rem;
+        margin-left: 21rem;
     }
 
     main section#sec div.contOpcCarr div p:nth-child(1) {
