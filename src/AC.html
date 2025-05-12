@@ -10,6 +10,7 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/jquery.animate-colors-min.js"></script>
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -58,61 +59,72 @@
             <section id="sec">
                 <div class="contenedor">
                     <div>
-                        <h2 class="titulo tituloDer">ATENCIÓN AL CLIENTE</h2>
+                        <h2 class="titulo tituloDer">¿QUIÉNES SOMOS?</h2>
                     </div>
                     <div>
                         <p class="rojo"></p>
                         <p class="gris"></p>
                     </div>
                 </div>
-                <div class="descrip gris">
-                    Lorem ipsum dolor sit amet consectetur.
-                    Sit sollicitudin suspendisse at sit. Condimentum maecenas
-                    ut tempus purus sollicitudin at molestie quis. Scelerisque
-                    arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
-                    Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
-                    amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
-                    Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
-                    nulla consequat
-                    pulvinar et. Pellentesque elit quis in dui. Vestibulum
-                    magnis nibh odio magna vivamus at. Massa aliquam iaculis
-                    quis risus quam ullamcorper. Pharetra scelerisque facilisis
-                    magna ut sed. Vitae platea et gravida amet rutrum tortor.
+                <div class="contenedor-reproductor">
+                    <video id="video" tabindex="0">
+                        <source src="video/Enchidirion.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                    <div class="controles">
+                        <button id="reproducir" tabindex="0"><i id="btnPlay" class="fas fa-play"></i></button>
+                        <button id="parar" tabindex="0"><i class="fas fa-stop"></i></button>
+                        <button id="atras" tabindex="0"><i class="fas fa-backward"></i></button>
+                        <button id="adelante" tabindex="0"><i class="fas fa-forward"></i></button>
+                        <button id="restart" tabindex="0"><i class="fas fa-redo"></i></button>
+                        <button id="lento" tabindex="0"><i class="fas fa-minus"></i></button>
+                        <button id="rapido" tabindex="0"><i class="fas fa-plus"></i></button>
+                        <input type="range" id="barraTiempo" tabindex="0" min="0" max="100" value="0">
+                        <span id="tiempo">0:00/0:00</span>
+                        <input type="range" id="volume" tabindex="0" min="0" max="1" step="0.1" value="0.0">
+                        <button id="mute" tabindex="0"><i id="btnMute" class="fas fa-deaf"></i></button>
+                        <button id="fullscreen" tabindex="0"><i class="fas fa-expand"></i></button>
+                    </div>
                 </div>
+                <script src="../js/scriptVideo.js"></script>
                 <div class="descrip gris">
-                    Lorem ipsum dolor sit amet consectetur.
-                    Sit sollicitudin suspendisse at sit. Condimentum maecenas
-                    ut tempus purus sollicitudin at molestie quis. Scelerisque
-                    arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
-                    Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
-                    amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
-                    Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
-                    nulla consequat
-                    pulvinar et. Pellentesque elit quis in dui. Vestibulum
-                    magnis nibh odio magna vivamus at. Massa aliquam iaculis
-                    quis risus quam ullamcorper. Pharetra scelerisque facilisis
-                    magna ut sed. Vitae platea et gravida amet rutrum tortor.
+                    Enchiridion nace con una idea clara: ofrecer algo más que productos. Queremos ser una guía, un
+                    compañero de viaje, una herramienta útil en el día a día de quienes buscan calidad, diseño y
+                    funcionalidad en un solo lugar. El nombre "Enchiridion", que proviene del griego y significa manual
+                    o compendio esencial, refleja exactamente eso: nuestro deseo de concentrar en cada propuesta lo
+                    esencial, lo práctico y lo significativo.
+
+                    Somos un equipo multidisciplinar formado por personas apasionadas por el desarrollo, el diseño, la
+                    innovación y la creatividad. Cada uno de nosotros aporta una visión única al proyecto, pero
+                    compartimos algo en común: la convicción de que las cosas bien hechas marcan la diferencia. Creemos
+                    en los productos que cuentan una historia, que tienen un propósito, que conectan con las personas
+                    más allá de lo superficial.
+
+                    En Enchiridion apostamos por la simplicidad inteligente. Nuestros productos no están pensados para
+                    seguir modas pasajeras, sino para acompañarte a largo plazo. Buscamos soluciones que encajen en tu
+                    vida cotidiana y que aporten un valor real. Por eso cuidamos cada detalle: desde los materiales y el
+                    diseño hasta la experiencia del usuario, la sostenibilidad y la transparencia.
+
+                    Pero más allá de lo que hacemos, nos define cómo lo hacemos. Nos guiamos por la honestidad, el
+                    trabajo en equipo y el aprendizaje constante. Escuchamos a nuestra comunidad, valoramos cada
+                    sugerencia y asumimos cada reto como una oportunidad para mejorar. Crecer con integridad es nuestro
+                    mayor objetivo.
+
+                    Enchiridion es más que una marca: es una forma de entender el presente y construir el futuro con
+                    criterio, estilo y conciencia. Si has llegado hasta aquí, gracias. Estás invitado a formar parte de
+                    esta historia.
                 </div>
-            </section>          
+            </section>
         </main>
         <footer id="contPie">
             <div class="blockNoti">
                 <input type="text" id="notifi" name="notifi" placeholder=" SUSCRIBETE">
                 <button type="submit" name="btnAtras"><img src="../iconos/flechaAtras.svg" alt="logo"></button>
-                <section id="ubicacion">
-                    <h2>Dónde encontrarnos</h2>
-                    <div class="mapa-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1272020364954!2d-122.08424938498578!3d37.42199957982586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24e4710f73b%3A0x808fb24e4710f73b!2sGoogleplex!5e0!3m2!1ses-419!2ses!4v1700000000000"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </section>
             </div>
             <p>
                 <a href="../src/QS.html">CONTACTO</a>
+                <a href="../src/PP.html">PÁGINAS LEGALES</a>
                 <a href="../src/AC.html">ATENCIÓN AL CLIENTE</a>
-                <a href="../src/PP.html">POLÍTICA DE PRIVACIDAD</a>
             </p>
             <div class="redesSocial">
                 <picture class="logo">

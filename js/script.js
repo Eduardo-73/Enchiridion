@@ -116,7 +116,7 @@ $(function () {
             });
         });
 
-        $('nav.menu ul li a')
+    $('nav.menu ul li a')
         .on("mouseenter", function () {
             $(this).css({
                 "text-decoration": "underline",
@@ -129,6 +129,52 @@ $(function () {
                 "font-weight": "normal"
             });
         });
+
+    $("input").on("blur", function () {
+        let input = $(this);
+        let label = input.siblings("label");
+
+        if (input.val().trim() === "") {
+            input.addClass("inputError");
+            label.addClass("errorLabel");
+        } else {
+            input.removeClass("inputError");
+            label.removeClass("errorLabel");
+        }
+    });
+
+    /*Parte del spinner*/
+    $("div.spinner div.flechas button:nth-child(1)").on("click", function () {
+        let contenedor = $(this).closest(".spinner");
+        let cantidad = parseInt(contenedor.find("div.contNum strong").text());
+        let suma = cantidad + 1;
+        contenedor.find("div.contNum strong").text(suma);
+    });
+
+    $("div.spinner div.flechas button:nth-child(2)").on("click", function () {
+        let contenedor = $(this).closest(".spinner");
+        let cantidad = parseInt(contenedor.find("div.contNum strong").text());
+        if (cantidad > 1) {
+            let resta = cantidad - 1;
+            contenedor.find("div.contNum strong").text(resta);
+        }
+    });
+
+    $("div.spinnerProd div.flechasProd button:nth-child(1)").on("click", function () {
+        let contenedor = $(this).closest(".spinnerProd");
+        let cantidad = parseInt(contenedor.find("div.contNumProd strong").text());
+        let suma = cantidad + 1;
+        contenedor.find("div.contNumProd strong").text(suma);
+    });
+
+    $("div.spinnerProd div.flechasProd button:nth-child(2)").on("click", function () {
+        let contenedor = $(this).closest(".spinnerProd");
+        let cantidad = parseInt(contenedor.find("div.contNumProd strong").text());
+        if (cantidad > 1) {
+            let resta = cantidad - 1;
+            contenedor.find("div.contNumProd strong").text(resta);
+        }
+    });
 
     var SliderModule = (function () {
         var pb = {};

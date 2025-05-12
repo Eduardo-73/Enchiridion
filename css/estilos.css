@@ -337,6 +337,7 @@ main section#sec article.itemSec {
 main section#sec article.itemSec picture img {
     height: auto;
     width: 12rem;
+    box-shadow: 0px -4px 10px black;
 }
 
 main section#sec article.itemSec button {
@@ -493,30 +494,27 @@ main section#sec article.prodCarr div.tituloArtProd {
     margin: 2rem 0 2rem 0;
 }
 
-main section#sec article.prodCarr div.totalPedidoProd div {
+main section#sec article.prodCarr div.totalPedidoProd div.contenedorPrecio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     font-weight: bold;
-    width: 100%;
+    width: 30%;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
-main section#sec article.prodCarr div.totalPedidoProd div span {
+main section#sec article.prodCarr div.totalPedidoProd div.contenedorPrecio span {
     color: red;
-    margin-left: 1rem;
 }
 
-main section#sec article.prodCarr div.totalPedidoProd div button {
+button.btnAniadir {
     background-color: black;
     color: white;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 2rem;
     cursor: pointer;
 }
 
-main section#sec article.prodCarr div.totalPedidoProd picture {
-    margin-left: auto;
-}
 
 main section#sec article.prodCarr picture.imgProd img {
     height: auto;
@@ -547,6 +545,7 @@ main section#sec article.prodCarr div.verde span:nth-child(2) {
 main section#sec div.descrip {
     text-align: justify;
     margin: 0 1rem 2rem 1rem;
+    font-size: large;
 }
 
 /*QS*/
@@ -566,7 +565,8 @@ main section#sec form {
 
 main section#sec form div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 1rem;
 }
 
@@ -583,7 +583,7 @@ main section#sec form button {
     cursor: pointer;
 }
 
-main section#sec form div.regis a {
+main section#sec form p.regis a {
     color: blue;
     text-decoration: underline;
 }
@@ -603,24 +603,6 @@ main section#sec form div.contForm div {
     flex-direction: column;
 }
 
-main section#sec form div.contForm div input#ciudad {
-    width: 60%;
-    margin-right: 3rem;
-}
-
-main section#sec form div.contForm div input#cp {
-    width: 30%;
-}
-
-main section#sec form div.contForm div input#fc {
-    width: 50%;
-    margin-right: 3rem;
-}
-
-main section#sec form div.contForm div input#cs {
-    width: 50%;
-}
-
 main section#sec form div.contForm div div.form2 {
     display: flex;
     flex-direction: row;
@@ -631,7 +613,6 @@ main section#sec form div.btnComprar {
 }
 
 /*VIDEO*/
-
 .contenedor-reproductor {
     background-color: #333;
     border-radius: 0.25rem;
@@ -640,6 +621,8 @@ main section#sec form div.btnComprar {
     flex-direction: column;
     box-shadow: 0 0.15rem 0.25rem black;
     margin: 1rem;
+    width: 100%;
+    margin-bottom: 5rem;
 }
 
 video {
@@ -655,7 +638,8 @@ video {
     flex-wrap: wrap;
 }
 
-button, input[type="range"] {
+button,
+input[type="range"] {
     background: #333;
     color: white;
     border-radius: 0.15rem;
@@ -664,11 +648,13 @@ button, input[type="range"] {
     outline: none;
 }
 
-button:hover, input[type="range"]:hover {
+button:hover,
+input[type="range"]:hover {
     background-color: #444;
 }
 
-button i, span {
+button i,
+span {
     font-size: 1rem;
 }
 
@@ -689,9 +675,100 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-button:focus, input:focus {
-    outline: 2px solid lightseagreen;
+/*BUSCADOR*/
+section#ubicacion {
+    display: flex;
+    flex-direction: column;
 }
+
+section#ubicacion div.mapa-container {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 0px -4px 5px black;
+}
+
+section#ubicacion div.mapa-container iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/*Spinner*/
+div.spinner div.contNum {
+    display: flex;
+    flex-direction: row;
+}
+
+div.spinner div.contNum strong {
+    background-color: lightgrey;
+    border: 1px solid black;
+    height: 0%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20%;
+    margin-top: 1.2rem;
+}
+
+div.spinner div.flechas {
+    display: flex;
+    flex-direction: column;
+}
+
+div.spinner div.flechas button {
+    background-color: white;
+    border: none;
+}
+
+div.spinner div.flechas button img {
+    width: 1.5em;
+    height: auto;
+}
+
+/*Spinner para prod*/
+div.spinnerProd {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 0.3rem;
+}
+
+div.spinnerProd div.contNumProd {
+    display: flex;
+    flex-direction: row;
+}
+
+div.spinnerProd div.contNumProd strong {
+    border: 2px solid blue;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    height: 45%;
+    border-radius: 20%;
+    margin-top: 1.2rem;
+}
+
+div.spinnerProd div.flechasProd {
+    display: flex;
+    flex-direction: column;
+}
+
+div.spinnerProd div.flechasProd button {
+    background-color: white;
+    border: none;
+}
+
+div.spinnerProd div.flechasProd button img {
+    width: 1.5em;
+    height: auto;
+}
+
+.inputError {
+    border: 2px solid red;
+}
+
+.errorLabel {
+    color: red;
+  }
 
 /*PIE*/
 footer#contPie {
@@ -702,7 +779,7 @@ footer#contPie {
     align-items: center;
     border-top: 3px solid black;
     box-shadow: 0px -4px 10px black;
-    margin-top: 30rem;
+    margin-top: 10rem;
 }
 
 footer#contPie p a {
@@ -824,6 +901,7 @@ div#volverarriba img {
     section#sec div.contProd {
         display: flex;
         flex-direction: row;
+        margin-bottom: 4rem;
     }
 
     section#sec div.contProd div.contenedor {
@@ -835,8 +913,8 @@ div#volverarriba img {
         display: none;
     }
 
-    main section#sec article.artCarr picture.spinner {
-        margin-left: 20rem;
+    div.spinner {
+        margin-left: 30rem;
     }
 
     footer#contPie {
@@ -898,7 +976,7 @@ div#volverarriba img {
         order: 2;
     }
 
-    header#contCabecera nav.menu .btnMenu{
+    header#contCabecera nav.menu .btnMenu {
         display: none;
     }
 
@@ -910,12 +988,12 @@ div#volverarriba img {
 
     header#contCabecera nav.menu ul.mainMenu {
         display: flex;
-        position: static; 
-        z-index: 1002; 
+        position: static;
+        z-index: 1002;
         background-color: black;
     }
 
-    header#contCabecera nav.menu ul li div.subMenu { 
+    header#contCabecera nav.menu ul li div.subMenu {
         background-color: black;
         color: white;
         font-size: x-large;
@@ -939,14 +1017,14 @@ div#volverarriba img {
 
     header#contCabecera nav.menu ul.mainMenu li .subMenuItems {
         background-color: white;
-        border: 2px solid black; 
+        border: 2px solid black;
         box-shadow: 0px -4px 10px black;
     }
 
-    header#contCabecera nav.menu ul.mainMenu li .subMenuItems a{
+    header#contCabecera nav.menu ul.mainMenu li .subMenuItems a {
         color: black;
-        font-size: medium;   
-        font-weight: lighter;   
+        font-size: medium;
+        font-weight: lighter;
     }
 
     #miniatura-container {
@@ -970,8 +1048,8 @@ div#volverarriba img {
         width: 5%;
     }
 
-    main section#sec article.artCarr picture.spinner {
-        margin-left: 21rem;
+    div.spinner {
+        margin-left: 22rem;
     }
 
     main section#sec div.contOpcCarr div p:nth-child(1) {
@@ -980,24 +1058,6 @@ div#volverarriba img {
 
     main section#sec form div.btnComprar {
         margin-right: 13.8rem;
-    }
-
-    footer#contPie section#ubicacion {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        margin: 0 auto;
-    }
-
-    footer#contPie section#ubicacion div.mapa-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    footer#contPie section#ubicacion div.mapa-container iframe {
-        width: 100%;
-        height: 250px;
-        border: 0;
     }
 
     footer#contPie {

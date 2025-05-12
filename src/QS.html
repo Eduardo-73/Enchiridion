@@ -10,7 +10,6 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/jquery.animate-colors-min.js"></script>
     <script src="../js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -55,88 +54,66 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main>       
+            <section id="ubicacion">
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1272020364954!2d-122.08424938498578!3d37.42199957982586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24e4710f73b%3A0x808fb24e4710f73b!2sGoogleplex!5e0!3m2!1ses-419!2ses!4v1700000000000"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
             <section id="sec">
                 <div class="contenedor">
                     <div>
-                        <h2 class="titulo tituloDer">¿QUIÉNES SOMOS?</h2>
+                        <h2 class="titulo tituloDer">CONTACTE CON NOSOTROS</h2>
                     </div>
                     <div>
                         <p class="rojo"></p>
                         <p class="gris"></p>
                     </div>
                 </div>
-                <div class="descrip gris">
-                    Lorem ipsum dolor sit amet consectetur.
-                    Sit sollicitudin suspendisse at sit. Condimentum maecenas
-                    ut tempus purus sollicitudin at molestie quis. Scelerisque
-                    arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
-                    Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
-                    amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
-                    Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
-                    nulla consequat
-                    pulvinar et. Pellentesque elit quis in dui. Vestibulum
-                    magnis nibh odio magna vivamus at. Massa aliquam iaculis
-                    quis risus quam ullamcorper. Pharetra scelerisque facilisis
-                    magna ut sed. Vitae platea et gravida amet rutrum tortor.
+                <form action="user.php" method="POST">
+                    <div class="contForm">
+                        <div>
+                            <div>
+                                <label>Nombre Completo*</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div>
+                                <label>E-mail*</label>
+                                <input type="text" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label>Comentario</label>
+                                <textarea rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnComprar">
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                </form>
+                <div class="contenedor">
+                    <div>
+                        <h2 class="titulo tituloDer">DATOS DE CONTACTO</h2>
+                    </div>
+                    <div>
+                        <p class="rojo"></p>
+                        <p class="gris"></p>
+                    </div>
                 </div>
-                <div class="descrip gris">
-                    Lorem ipsum dolor sit amet consectetur.
-                    Sit sollicitudin suspendisse at sit. Condimentum maecenas
-                    ut tempus purus sollicitudin at molestie quis. Scelerisque
-                    arcu sed tincidunt nulla malesuada amet risus sodales lobortis.
-                    Imperdiet nunc ullamcorper augue posuere faucibus in nunc dictum
-                    amet. Dui amet augue cursus faucibus et nisi consequat aliquam faucibus.
-                    Adipiscing feugiat convallis sed est neque malesuada nisi aenean. Duis
-                    nulla consequat
-                    pulvinar et. Pellentesque elit quis in dui. Vestibulum
-                    magnis nibh odio magna vivamus at. Massa aliquam iaculis
-                    quis risus quam ullamcorper. Pharetra scelerisque facilisis
-                    magna ut sed. Vitae platea et gravida amet rutrum tortor.
-                </div>
-            </section>  
-            <div class="contenedor-reproductor">
-                <video id="video" tabindex="0">
-                    <source src="videos/video.mp4" type="video/mp4">
-                    <source src="videos/video.ogg" type="video/ogg">
-                    <source src="videos/video.webm" type="video/webm">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
-                <div class="controles">
-                    <button id="reproducir" tabindex="0"><i id="btnPlay" class="fas fa-play"></i></button>
-                    <button id="parar" tabindex="0"><i class="fas fa-stop"></i></button>
-                    <button id="atras" tabindex="0"><i class="fas fa-backward"></i></button>
-                    <button id="adelante" tabindex="0"><i class="fas fa-forward"></i></button>
-                    <button id="restart" tabindex="0"><i class="fas fa-redo"></i></button>
-                    <button id="lento" tabindex="0"><i class="fas fa-minus"></i></button>
-                    <button id="rapido" tabindex="0"><i class="fas fa-plus"></i></button>
-                    <input type="range" id="barraTiempo" tabindex="0" min="0" max="100" value="0">
-                    <span id="tiempo">0:00/0:00</span>
-                    <input type="range" id="volume" tabindex="0" min="0" max="1" step="0.1" value="0.0">
-                    <button id="mute" tabindex="0"><i id="btnMute" class="fas fa-deaf"></i></button>
-                    <button id="fullscreen" tabindex="0"><i class="fas fa-expand"></i></button>
-                </div>
-            </div>
-            <script src="../js/scriptVideo.js"></script>        
+            </section>
         </main>
         <footer id="contPie">
             <div class="blockNoti">
                 <input type="text" id="notifi" name="notifi" placeholder=" SUSCRIBETE">
                 <button type="submit" name="btnAtras"><img src="../iconos/flechaAtras.svg" alt="logo"></button>
-                <section id="ubicacion">
-                    <h2>Dónde encontrarnos</h2>
-                    <div class="mapa-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1272020364954!2d-122.08424938498578!3d37.42199957982586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24e4710f73b%3A0x808fb24e4710f73b!2sGoogleplex!5e0!3m2!1ses-419!2ses!4v1700000000000"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </section>
             </div>
             <p>
                 <a href="../src/QS.html">CONTACTO</a>
+                <a href="../src/PP.html">PÁGINAS LEGALES</a>
                 <a href="../src/AC.html">ATENCIÓN AL CLIENTE</a>
-                <a href="../src/PP.html">POLÍTICA DE PRIVACIDAD</a>
             </p>
             <div class="redesSocial">
                 <picture class="logo">
