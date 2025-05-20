@@ -335,7 +335,7 @@ main section#sec article.itemSec {
 }
 
 main section#sec article.itemSec picture img {
-    height: auto;
+    height: 16rem;
     width: 12rem;
     box-shadow: 0px -4px 10px black;
 }
