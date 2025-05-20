@@ -62,6 +62,7 @@ $(function () {
         $(this).stop().css({ "background-color": "black" });
     });
     // Al pasar el ratón por el enlace
+    /*
     $(".contenedor").on("mouseenter", function () {
         $(this).find("a").stop(true, true).fadeIn(500);
     });
@@ -69,7 +70,7 @@ $(function () {
     $(".contenedor").on("mouseleave", function () {
         $(this).find("a").stop(true, true).fadeOut(500);
     });
-
+    */
     $(".totalPedido a").on("mouseenter", function () {
         $(this).stop(true, true).css({ "background-color": "#CE2D3F" });
     });
@@ -133,13 +134,16 @@ $(function () {
     $("input").on("blur", function () {
         let input = $(this);
         let label = input.siblings("label");
+        let span = input.siblings("span");
 
         if (input.val().trim() === "") {
             input.addClass("inputError");
             label.addClass("errorLabel");
+            span.addClass("errorSpan");
         } else {
             input.removeClass("inputError");
             label.removeClass("errorLabel");
+            span.removeClass("errorSpan");
         }
     });
 

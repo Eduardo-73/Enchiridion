@@ -58,21 +58,23 @@
             <section id="sec">
                 <div class="contenedor">
                     <div>
-                        <h2 class="titulo tituloDer">INICIAR SESIÓN</h2>
+                        <h2 class="titulo">INICIAR SESIÓN</h2>
                     </div>
                     <div>
                         <p class="rojo"></p>
                         <p class="gris"></p>
                     </div>
                 </div>
-                <form action="user.php" method="POST">
+                <form action="user.html" method="post">
                     <div>
-                        <label class="nombreLabel">E-mail*</label>
+                        <label>E-mail*</label>
                         <input type="text" id="email" name="email" required>
+                        <span class="displaySpan">Campo vacio*</span>
                     </div>
                     <div>
-                        <label class="nombreLabel">Contraseña*</label>
+                        <label>Contraseña*</label>
                         <input type="password" id="ps" name="ps" required>
+                        <span class="displaySpan">Campo vacio*</span>
                     </div>
                     <button id="inicio" type="submit">INICIAR SESIÓN</button>
                     <p class="regis">¿No tienes cuenta?<a href="../src/registro.html">Registrate</a></p>

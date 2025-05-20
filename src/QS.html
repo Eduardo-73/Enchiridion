@@ -55,18 +55,10 @@
             </div>
         </header>
         <main>       
-            <section id="ubicacion">
-                <div class="mapa-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1272020364954!2d-122.08424938498578!3d37.42199957982586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24e4710f73b%3A0x808fb24e4710f73b!2sGoogleplex!5e0!3m2!1ses-419!2ses!4v1700000000000"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </section>
             <section id="sec">
                 <div class="contenedor">
                     <div>
-                        <h2 class="titulo tituloDer">CONTACTE CON NOSOTROS</h2>
+                        <h2 class="titulo">CONTACTE CON NOSOTROS</h2>
                     </div>
                     <div>
                         <p class="rojo"></p>
@@ -79,14 +71,16 @@
                             <div>
                                 <label>Nombre Completo*</label>
                                 <input type="text" id="nombre" name="nombre" required>
+                                <span class="displaySpan">Campo vacio*</span>
                             </div>
                             <div>
                                 <label>E-mail*</label>
                                 <input type="text" id="email" name="email" required>
+                                <span class="displaySpan">Campo vacio*</span>
                             </div>
                             <div>
                                 <label>Comentario</label>
-                                <textarea rows="10"></textarea>
+                                <textarea name="comentario" rows="10"></textarea>
                             </div>
                         </div>
                     </div>
@@ -96,12 +90,20 @@
                 </form>
                 <div class="contenedor">
                     <div>
-                        <h2 class="titulo tituloDer">DATOS DE CONTACTO</h2>
+                        <h2 class="titulo">DATOS DE CONTACTO</h2>
                     </div>
                     <div>
                         <p class="rojo"></p>
                         <p class="gris"></p>
                     </div>
+                </div>
+            </section>
+            <section id="ubicacion">
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.1272020364954!2d-122.08424938498578!3d37.42199957982586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24e4710f73b%3A0x808fb24e4710f73b!2sGoogleplex!5e0!3m2!1ses-419!2ses!4v1700000000000"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </section>
         </main>

@@ -149,7 +149,7 @@ button#imagen-siguiente {
     height: auto;
     display: none;
     bottom: 3.5rem;
-    left: 45%;
+    left: 42%;
     z-index: 500;
 }
 
@@ -191,7 +191,7 @@ button#imagen-siguiente {
     position: absolute;
     /*max-width: 100%;*/
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -246,6 +246,7 @@ button#imagen-siguiente {
 .control-buttons {
     margin-top: 15px;
     text-align: center;
+    margin-right: 1rem;
 }
 
 .control-buttons li {
@@ -310,7 +311,6 @@ main section#sec div.contenedor a {
     color: red;
     font-size: small;
     margin-left: auto;
-    display: none;
 }
 
 main section#sec div.contenedor p.gris {
@@ -770,6 +770,16 @@ div.spinnerProd div.flechasProd button img {
     color: red;
   }
 
+.displaySpan {
+    display: none;
+}
+
+.errorSpan {
+    display: flex;
+    color: red;
+    font-size: small;
+}
+
 /*PIE*/
 footer#contPie {
     background-color: #204FC7;
@@ -864,6 +874,10 @@ div#volverarriba img {
 }
 
 @media(min-width: 768px) {
+    .control-buttons{
+        margin-right: 1rem;
+    }
+
     .contenedor-slider {
         width: 800px;
     }
@@ -950,17 +964,9 @@ div#volverarriba img {
         transform: none;
         padding: 0;
         border: none;
-        border-radius: 0;
         order: 0;
         padding-right: 3rem;
-    }
-
-    header#contCabecera div#buscadorContainer input {
-        display: none;
-    }
-
-    header#contCabecera div#buscadorContainer img {
-        filter: invert(1);
+        background-color: white;
     }
 
     .contenedor-slider {
@@ -984,6 +990,7 @@ div#volverarriba img {
         order: 3;
         margin-left: auto;
         display: flex;
+        align-items: center;
     }
 
     header#contCabecera nav.menu ul.mainMenu {
