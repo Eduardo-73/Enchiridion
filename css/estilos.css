@@ -768,7 +768,7 @@ div.spinnerProd div.flechasProd button img {
 
 .errorLabel {
     color: red;
-  }
+}
 
 .displaySpan {
     display: none;
@@ -778,6 +778,21 @@ div.spinnerProd div.flechasProd button img {
     display: flex;
     color: red;
     font-size: small;
+}
+
+/*COOCKIES*/
+.cookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 -2px 10px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
 }
 
 /*PIE*/
@@ -874,7 +889,7 @@ div#volverarriba img {
 }
 
 @media(min-width: 768px) {
-    .control-buttons{
+    .control-buttons {
         margin-right: 1rem;
     }
 
@@ -966,6 +981,7 @@ div#volverarriba img {
         border: none;
         order: 0;
         padding-right: 3rem;
+        padding-left: 0.5rem;
         background-color: white;
     }
 

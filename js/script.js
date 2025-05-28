@@ -180,6 +180,11 @@ $(function () {
         }
     });
 
+    $(".cookie button").on("click", function () {
+        $(".cookie").fadeOut();
+    });
+
+    /*SPINNER*/
     var SliderModule = (function () {
         var pb = {};
         pb.elslider = $('#slider');
