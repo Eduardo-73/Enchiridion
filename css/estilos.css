@@ -559,11 +559,12 @@ main section#sec form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     font-weight: bold;
+    width: 100%;
 }
 
 main section#sec form div {
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -571,7 +572,6 @@ main section#sec form div {
 }
 
 main section#sec form div input {
-    width: 30rem;
     height: 3rem;
     border-radius: 3%;
 }
@@ -592,6 +592,7 @@ main section#sec form p.regis a {
 main section#sec form div.contForm {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main section#sec form div.contForm h3 {
@@ -601,6 +602,8 @@ main section#sec form div.contForm h3 {
 main section#sec form div.contForm div {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-bottom: 1.5rem;
 }
 
 main section#sec form div.contForm div div.form2 {
@@ -609,7 +612,8 @@ main section#sec form div.contForm div div.form2 {
 }
 
 main section#sec form div.btnComprar {
-    margin-left: auto;
+    margin: auto;
+    width: 40%;
 }
 
 /*VIDEO*/
@@ -795,6 +799,10 @@ div.spinnerProd div.flechasProd button img {
     z-index: 9999;
 }
 
+.enlace {
+    color: #204FC7;
+}
+
 /*PIE*/
 footer#contPie {
     background-color: #204FC7;
@@ -889,6 +897,16 @@ div#volverarriba img {
 }
 
 @media(min-width: 768px) {
+
+    main section#sec form div.btnComprar {
+        margin: auto;
+        width: 25%;
+    }
+
+    main section#sec form div input {
+        width: 100%;
+    }
+
     .control-buttons {
         margin-right: 1rem;
     }
@@ -943,7 +961,7 @@ div#volverarriba img {
     }
 
     div.spinner {
-        margin-left: 30rem;
+        margin-left: 24rem;
     }
 
     footer#contPie {
@@ -974,6 +992,19 @@ div#volverarriba img {
 }
 
 @media(min-width: 1024px) {
+    main section#sec form div.btnComprar {
+        width: 100%;
+    }
+
+    main section#sec form div.btnComprar button {
+        width: 30%;
+        margin: auto;
+    }
+
+    main section#sec form div input {
+        width: 100%;
+    }
+
     header#contCabecera div#buscadorContainer {
         position: static;
         transform: none;
